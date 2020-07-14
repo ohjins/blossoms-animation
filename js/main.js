@@ -1,32 +1,18 @@
 $(function(){
+	
 	for (var i=0;i<10;i++) {
-		var $particle = $('<i class="particle"/>').append('<i class="item"/>');
+		var $particle = $('<i class="particle"/>').append('<i class="item" />');
 		//변수 $particle = particle 클래스를 가진 i태그 안에 item 클래스를 가진 i태그 를 생성
-		$particle.css({'animation-delay': randomFunc(8e3) + 'ms', 'left': randomFunc(99) + '%', 'transform': 'scale('+ (Math.random()+0.8) +')', 'animation-duration':(randomFunc(3e3, 7e3)) + 'ms'});
+		$particle.css({'animation-delay': randomFunc(5e3) + 'ms', 'left': randomFunc(99) + '%', 'animation-duration':(randomFunc(3e3, 7e3)) + 'ms'});
 		// particle 클래스를 가진 i태그에 css 추가 
-		//animation-delay : randomFunc에 8000전달 Math.random(0~1난수)*8000ms (1~8000ms 세팅)
-		// left : randomFunc에 99전달 Math.random(0~1난수)*99% (1~99% 세팅)
-		// scale : Math.random(0~1난수) +0.8 (0.8~1.8 세팅)
-		// animation-duration : randomFunc에 3000,7000전달 7000+Math.random(0~1난수)*3000ms  (7000~10000ms 세팅)
-		$particle.find('.item').css({'animation-duration':$particle.css('animation-duration')});
-		//particle 클래스를 가진 i 태그안에 item 클래스를 가진 i 태그에 animation-duration css 추가
-		//(.particle animation-duration의 css 즉 randomFunc에 3000,7000전달 7000+Math.random(0~1난수)*3000ms) (7000~9999값 세팅)
-
+		// animation-delay : randomFunc에 8000전달 Math.random(0~1난수)*8000ms [1~8000ms 세팅]
+		// left : randomFunc에 99전달 Math.random(0~1난수)*99% [1~99% 세팅]
+		// animation-duration : randomFunc에 3000,7000전달 7000+Math.random(0~1난수)*3000ms [7000~10000ms 세팅]
+		$particle.find('.item').css({'animation-duration':$particle.css('animation-duration')}).css({'animation-name': 'sakura' + (randomFunc(2)+1)});
+		// particle 클래스를 가진 i 태그안에 item 클래스를 가진 i 태그에 animation-duration css 추가 (.particle 값과 같은값) , animation-name:sakura1~2 추가
 		$particle.appendTo('.header');
 		// header 클래스에 추가하기 css추가된 i태그 10개 넣기 
 	};
-
-	$('.header').on('animationiteration', '.particle', function() {
-		var disLeft = randomFunc(99);
-		//변수 disLeft = randomFunc에 99전달 Math.random(0~1난수)*99% (1~99% 세팅)
-		$(this).css({'left': Math.abs(disLeft) + '%', 'transform': 'scale('+ ((Math.random() * 0.2) + 0.8) +')'}).find('.item').css({'animation-name': 'sakura' + randomFunc(3)});
-		// left : 절대값 randomFunc에 99전달 Math.random(0~1난수)*99% (1~99% 세팅)
-		// scale : (0~1난수) * 0.2 + 0+8 (0.8~ 0.9999 세팅)
-		// item 클래스를 찾아서 animation-name :  Math.random(0~1난수)*3 (0~2 세팅)
-	}).on('animationstart', '.particle', function(e) {
-		$(this).find('.item').css({'animation-name': 'sakura' + Math.floor(Math.random() * 3)}).addClass('active');
-		// item 클래스를 찾아서 animation-name 소숫점을버린 작은정수 (0~2 세팅) , active 클래스 추가
-	});
 
 	function randomFunc(num, def) {
 		var randomResult = (def) ? def + Math.floor(Math.random() * num) : Math.floor(Math.random() * num)
@@ -35,6 +21,7 @@ $(function(){
 		return randomResult;
 	}
 	
+
 
 	$('.layer_open_btn').on('click',function(){
 		var $thisTxt = $(this).text();
