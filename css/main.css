@@ -76,9 +76,7 @@
 	.wrap .area_wrap .area_pick26 {left:413px; top:796px;}
 	.wrap .area_wrap .area_pick27 {left:304px; top:995px;}
 	.wrap .area_wrap .area_pick28 {left:263px; top:986px;}
-	.wrap .area_wrap
-	.wrap .area_wrap
-	.wrap .area_wrap
+
 	@keyframes pulse {
 		0% {
 			transform: scale(0.9);
@@ -90,17 +88,7 @@
 			transform: scale(0.9);
 		}			
 	}
-	@-webkit-keyframes pulse {
-		0% {
-			-webkit-transform: scale(0.9);	
-		}
-		50% {
-			-webkit-transform: scale(1.1);
-		}	
-		100% {
-			-webkit-transform: scale(0.9);
-		}			
-	}
+
 	.calendar{position:absolute; bottom:0px; left:50%; transform:translateX(-50%); width:820px; height:150px; line-height:3;  font-weight:600;}
 	.calendar li {float:left; width:34px; height:36px; line-height:36px; margin:0 4px;}
 	.calendar li.active{background: url('../images/stemp.png') center no-repeat; color:#f77aa2;}
