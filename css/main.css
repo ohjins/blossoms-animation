@@ -1,6 +1,6 @@
-	.blind{position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;  border: 0;  clip: rect(0 0 0 0); overflow: hidden;}
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
 	body{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
+	.blind{position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;  border: 0;  clip: rect(0 0 0 0); overflow: hidden;}
 	.wrap{width:980px; margin:0 auto;}
 	.wrap .header{position:relative; background: url('../images/header_bg.jpg') no-repeat; height:758px; text-align:center; color:#fff; overflow:hidden;}
 	.wrap .header h1{font-size:110px; font-weight:500; border-bottom:6px solid #fff; width:450px; margin:0 auto; padding:25px 0; text-shadow: 5px 5px 5px #e7acc0;}
