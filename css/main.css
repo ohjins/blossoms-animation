@@ -45,7 +45,7 @@
 	.wrap .area_wrap ul li{position:absolute; }
 	.wrap .area_wrap ul li.checked .layer_open_btn .picker{background-position:0% 0%;}
 	.wrap .area_wrap ul li .layer_open_btn{display:block; background:url('../images/picker_shadow.png') bottom center no-repeat; cursor:pointer;}
-	.wrap .area_wrap ul li .layer_open_btn:hover{ animation:pulse 1.5s infinite;}
+	.wrap .area_wrap ul li:hover .layer_open_btn{ animation:pulse 1.5s infinite;}
 	.wrap .area_wrap ul li .layer_open_btn .picker{display:block; width:40px; height:51px; font:0/0 a; background:url('../images/picker.png') no-repeat; background-size:200% 100%; background-position:100% 0;}
 
 	.wrap .area_wrap .area_pick01 {left:357px; top:243px;}
