@@ -38,7 +38,29 @@
 		70% {transform:rotate(600deg); margin-left:-150%;}
 		100% {transform:rotate(520deg);}
 	}
-	main{}
+
+	@-webkit-keyframes sakura {
+		0% {top:0%; opacity:1;}
+		85% {opacity:1;}
+		100% {transform:scale(.5); top:75%; opacity:0;}
+	}
+	@-webkit-keyframes sakura1 {
+		0% {transform:rotate(0);}
+		15% {transform:rotate(160deg); margin-left:100%;}
+		30% {transform:rotate(240deg); margin-left:-100%;}
+		50% {transform:rotate(180deg); margin-left:-50%;}
+		70% {transform:rotate(230deg); margin-left:-100%;}
+		100% {transform:rotate(170deg);}
+	}
+	@-webkit-keyframes sakura2 {
+		0% {transform:rotate(180deg);}
+		25% {transform:rotate(270deg); margin-left:-250%;}
+		32% {transform:rotate(650deg); margin-left:-350%;}
+		50% {transform:rotate(540deg); margin-left:-50%;}
+		70% {transform:rotate(600deg); margin-left:-150%;}
+		100% {transform:rotate(520deg);}
+	}
+
 	.wrap .area_wrap{position:relative; background: url('../images/area_wrap_bg.jpg') no-repeat; height:1283px; text-align:center; }
 	.wrap .area_wrap .mile{font-size:28px; padding-top: 100px;}
 	.wrap .area_wrap .mile strong{color:#fe7b9d;}
@@ -89,7 +111,18 @@
 		}			
 	}
 
-	.calendar{position:absolute; bottom:0px; left:50%; transform:translateX(-50%); width:820px; height:150px; line-height:3;  font-weight:600;}
+	@-webkit-keyframes pulse {
+		0% {
+			transform: scale(0.9);
+		}
+		50% {
+			transform: scale(1.2);
+		}	
+		100% {
+			transform: scale(0.9);
+		}			
+	}
+	.calendar{position:absolute; bottom:0px; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); width:820px; height:150px; line-height:3;  font-weight:600;}
 	.calendar li {float:left; width:34px; height:36px; line-height:36px; margin:0 4px;}
 	.calendar li.active{background: url('../images/stemp.png') center no-repeat; color:#f77aa2;}
 	.calendar .march05,
@@ -121,7 +154,7 @@
 	
 	.plus_wrap .my_status{position:relative; width:820px; height:116px; line-height:116px; margin:0 auto; border:2px dashed #fd5789; border-radius:58px; margin-bottom: 50px;}
 	.plus_wrap .my_status h5{font-size:25px; color:#fd5789; margin-left:65px;}
-	.plus_wrap .my_status .stamp_wrap{position:absolute; top: 50%; transform: translateY(-50%); right: 35px;}
+	.plus_wrap .my_status .stamp_wrap{position:absolute; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); right: 35px;}
 	.plus_wrap .my_status .stamp_wrap li{float:left; background: url('../images/benefit_stemp.png') no-repeat; width:83px; height:82px; margin-right:30px; border-radius:50%; box-shadow: 5px 5px 5px #f4f4f4;}
 	.plus_wrap .my_status .stamp_wrap li.active{ background: url('../images/stemp_active.png') no-repeat;}
 
@@ -130,7 +163,7 @@
 	.plus_wrap .lotte_app h5{font-size:25px;}
 	.plus_wrap .lotte_app .lotte_app_txt01{width:20px; height:1px; background: #000; margin:20px 0;}
 	.plus_wrap .lotte_app .lotte_app_txt02{font-size:20px; margin-bottom: 15px; font-weight:600;}
-	.plus_wrap .lotte_app .qr_code{position:absolute; top:50%; transform:translateY(-50%); right:60px;}
+	.plus_wrap .lotte_app .qr_code{position:absolute; top:50%; transform:translateY(-50%);  -webkit-transform: translateY(-50%); right:60px;}
 
 	.mobile_appdown{ background-color: #fff8fa; text-align:center;}
 	.mobile_appdown .mobile_appdown_area{padding:100px 0;}
