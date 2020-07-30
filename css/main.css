@@ -25,18 +25,18 @@
 	@keyframes sakura1 {
 		0% {transform:rotate(0);}
 		15% {transform:rotate(160deg); margin-left:100%;}
-		30% {transform:rotate(240deg); margin-left:-100%;}
+		30% {transform:rotate(140deg); margin-left:-100%;}
 		50% {transform:rotate(180deg); margin-left:-50%;}
-		70% {transform:rotate(230deg); margin-left:-100%;}
+		70% {transform:rotate(130deg); margin-left:-100%;}
 		100% {transform:rotate(170deg);}
 	}
 	@keyframes sakura2 {
-		0% {transform:rotate(180deg);}
-		25% {transform:rotate(270deg); margin-left:-250%;}
-		32% {transform:rotate(650deg); margin-left:-350%;}
-		50% {transform:rotate(540deg); margin-left:-50%;}
-		70% {transform:rotate(600deg); margin-left:-150%;}
-		100% {transform:rotate(520deg);}
+		0% {transform:rotate(160deg);}
+		25% {transform:rotate(140deg); margin-left:-250%;}
+		32% {transform:rotate(160deg); margin-left:-350%;}
+		50% {transform:rotate(140deg); margin-left:-50%;}
+		70% {transform:rotate(160deg); margin-left:-150%;}
+		100% {transform:rotate(140deg);}
 	}
 
 	@-webkit-keyframes sakura {
@@ -47,18 +47,18 @@
 	@-webkit-keyframes sakura1 {
 		0% {transform:rotate(0);}
 		15% {transform:rotate(160deg); margin-left:100%;}
-		30% {transform:rotate(240deg); margin-left:-100%;}
+		30% {transform:rotate(140deg); margin-left:-100%;}
 		50% {transform:rotate(180deg); margin-left:-50%;}
-		70% {transform:rotate(230deg); margin-left:-100%;}
+		70% {transform:rotate(130deg); margin-left:-100%;}
 		100% {transform:rotate(170deg);}
 	}
 	@-webkit-keyframes sakura2 {
-		0% {transform:rotate(180deg);}
-		25% {transform:rotate(270deg); margin-left:-250%;}
-		32% {transform:rotate(650deg); margin-left:-350%;}
-		50% {transform:rotate(540deg); margin-left:-50%;}
-		70% {transform:rotate(600deg); margin-left:-150%;}
-		100% {transform:rotate(520deg);}
+		0% {transform:rotate(160deg);}
+		25% {transform:rotate(140deg); margin-left:-250%;}
+		32% {transform:rotate(160deg); margin-left:-350%;}
+		50% {transform:rotate(140deg); margin-left:-50%;}
+		70% {transform:rotate(160deg); margin-left:-150%;}
+		100% {transform:rotate(140deg);}
 	}
 
 	.wrap .area_wrap{position:relative; background: url('../images/area_wrap_bg.jpg') no-repeat; height:1283px; text-align:center; }
